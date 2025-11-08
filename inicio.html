@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="shortcut icon" href="assets/img/g.png" type="image/x-icon">
     <meta http-equiv="refresh" content="">
-    <title>Início - DaviFlix</title>
+    <title>Início - GerminaFlix</title>
 </head>
 
 <body>
@@ -19,12 +19,10 @@
 
             <nav>
                 <ul>
-                    <li class="inicio"><strong>Início</strong></li>
-                    <li><a href="#continuar">Séries</a></li>
-                    <li>Filmes</li>
-                    <li>Bombando</li>
-                    <li>Minha lista</li>
-                    <li>Navegar por idiomas</li>
+                    <li class="#inicio"><strong>Início</strong></li>
+                    <li><a href="#continuar">Continuar</a></li>
+                    <li><a href="#series">Séries</a></li>
+                    <li><a href="#filmes">Filmes</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,7 +36,7 @@
                 <i class="fas fa-bell" style="font-size: 20px; margin-top: 10px;"></i>
             </div>
 
-            <a href="index.html"><img class="icon" src="assets/img/Netflix-avatar.png" alt="perfil" style="cursor: pointer;"></a>
+            <a href="index.html"><img class="icon" id="perfil-usuario" src="assets/img/perfil-amarelo.jpg" alt="perfil"></a>
         </div>
     </header>
 
@@ -49,8 +47,6 @@
     </div>
 
     <div class="sombra">
-
-
         <div class="legenda" style="margin-left: 30px;">
 
             <img class="hxhlogo" src="assets/img/hunterhunterlogo.png" alt="hunterhunterlogo" width="250px">
@@ -79,10 +75,12 @@
                         <h1 style="font-size: small;">Assistir agora</h1>
                     </button></a>
 
-                    <a href=""><button class="info-button" id="more-info">
-                        <img src="assets/img/icons8-informações-128.png" alt="info" width="20px" height="20px" style="margin-top: 5px;">
-                        <h1 style="font-size: small">Mais informações</h1>
-                    </button></a>
+                    <a href="">
+                        <button class="info-button" id="more-info">
+                            <img src="assets/img/icons8-informações-128.png" alt="info" width="20px" height="20px" style="margin-top: 5px;">
+                            <h1 style="font-size: small">Mais informações</h1>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -135,7 +133,7 @@
                 </div>
             </section>
 
-            <section class="conteudo">
+            <section class="conteudo" id="recomendado">
                 <h1>Recomendados</h1>
                 <div class="carrossel">
                     <img src="assets/img/batman.webp" alt="batman"class="filme">
@@ -156,6 +154,22 @@
                 </div>
             </section>
 
+             <section class="conteudo" id="series">
+                <h1>Séries</h1>
+                <div class="carrossel">
+                    
+                </div>
+            </section>
+
+             <section class="conteudo" id="filmes">
+                <h1>Filmes</h1>
+                <div class="carrossel">
+                    
+                </div>
+            </section>
+
+
+
             <footer>
                 <div style="display: flex; justify-content: center; justify-items: center;">
                     <div class="brands">
@@ -168,7 +182,17 @@
                 </div>
             </footer>
     </main>
-
-
 </body>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+        const img = localStorage.getItem("perfilSelecionado");
+            if (img) {
+                document.getElementById("perfil-usuario").src = img;
+            }
+        });
+
+    </script>
+
 </html>

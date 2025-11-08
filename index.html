@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/g.png" type="image/x-icon">
-    <title>Perfis</title>
+    <title>Perfis - GerminaFlix</title>
 </head>
 
 <body>
@@ -22,24 +22,25 @@
             </th>
             <tr>
                 <td class="perfil">
-                    <a href="inicio.html"><img src="assets/img/1ba2e6d1d4874546c70c91f1024e17fb.jpg" alt="amarelo"
-                            width="200px"></a>
+                    <a href="inicio.html" onclick="selectionarPerfil('assets/img/perfil-amarelo.jpg')">
+                        <img src="assets/img/perfil-amarelo.jpg" alt="amarelo"width="200px">
+                    </a>
                     <p>Perfil 1</p> 
                 </td>
 
-                <td class="perfil">
-                    <a href="inicio.html"><img src="assets/img/Netflix-avatar.png" alt="verde-azulado" width="200px"></a>
+                <td class="perfil" onclick="selectionarPerfil('assets/img/perfil-azul-claro.jpg')">
+                    <a href="inicio.html"><img src="assets/img/perfil-azul-claro.png" alt="verde-azulado" width="200px"></a>
                     <p>Perfil 2</p>
                 </td>
 
-                <td class="perfil">
-                    <a href="inicio.html"><img src="assets/img/netflix-profile-pictures-1000-x-1000-88wkdmjrorckekha.jpg"
+                <td class="perfil" onclick="selectionarPerfil('assets/img/perfil-azul.jpg')">
+                    <a href="inicio.html"><img src="assets/img/perfil-azul.jpg"
                             alt="azul" width="200px"></a>
                     <p>Perfil 3</p>
                 </td>
 
-                <td class="perfil">
-                    <a href="inicio.html"><img src="assets/img/61547625e01d8daf941aae3ffb37f653.jpg" alt="verde"
+                <td class="perfil" onclick="selectionarPerfil('assets/img/perfil-verde.jpg')">
+                    <a href="inicio.html"><img src="assets/img/perfil-verde.jpg" alt="verde"
                             width="200px"></a>
                     <p>Perfil 4 </p>
                 </td>
@@ -52,5 +53,11 @@
         </div>
     </main>
 </body>
+
+    <script>
+        function selecionarPerfil(imgPath){
+            localStorage.setItem("perfilSelecionado", imgPath)
+        }
+    </script>
 
 </html>
