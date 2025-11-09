@@ -14,15 +14,15 @@
 <body>
     <header class="transparent">
         <div class="primarySearch" style="display: flex;">
-
             <img class="netflix" src="assets/img/GERMINAFLIX.png" alt="netflix">
-
             <nav>
                 <ul>
                     <li class="#inicio"><strong>Início</strong></li>
                     <li><a href="#continuar">Continuar</a></li>
                     <li><a href="#series">Séries</a></li>
                     <li><a href="#filmes">Filmes</a></li>
+                    <li><a href="separação.html">Sobre nós</a></li>
+
                 </ul>
             </nav>
         </div>
@@ -31,11 +31,9 @@
             <div>
                 <i class="fas fa-search" style="font-size: 20px; margin-top: 10px;"></i>
             </div>
-
             <div>
                 <i class="fas fa-bell" style="font-size: 20px; margin-top: 10px;"></i>
             </div>
-
             <a href="index.html"><img class="icon" id="perfil-usuario" src="assets/img/perfil-amarelo.jpg" alt="perfil"></a>
         </div>
     </header>
@@ -46,10 +44,8 @@
         </video>
     </div>
 
-
     <div class="sombra">
         <div class="legenda" style="margin-left: 30px;">
-
             <img class="hxhlogo" src="assets/img/hunterhunterlogo.png" alt="hunterhunterlogo" width="250px">
 
             <div style="margin-left: 10px; cursor: default;">
@@ -74,8 +70,8 @@
                         <button class="info-button">
                             <img src="assets/img/pngwing.com.png" alt="play" width="30px" height="30px">
                             <h1 style="font-size: small;">Assistir agora</h1>
-                        </button></a>
-
+                        </button>
+                    </a>
                     <a href="">
                         <button class="info-button" id="more-info">
                             <img src="assets/img/icons8-informações-128.png" alt="info" width="20px" height="20px" style="margin-top: 5px;">
@@ -89,179 +85,411 @@
         <main>
             <section class="conteudo" id="continuar">
                 <h1>Continuar assistindo</h1>
-                <div class="carrossel">
-                    <div class="div-continuar">
-                        <img src="assets/img/rickandmorty.webp" alt="ricknmorty" class="slide filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
+                <div class="carrossel-wrapper">
+                    <button class="seta esquerda">&#10094;</button>
+                    <div class="carrossel">
+                        <div class="div-continuar">
+                            <img src="assets/img/rickandmorty.webp" alt="ricknmorty" class="slide filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                            <img src="assets/img/barraCA1.png" alt="barra" class="barra-continuar">
                         </div>
-                        <img src="assets/img/barraCA1.png" alt="barra" class="barra-continuar">
+
+                        <div class="div-continuar">
+                            <img src="assets/img/deptodeconsp.jpg" alt="depto" class="slide filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                            <img src="assets/img/barraCA2.png" alt="barra" class="barra-continuar">
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/theoffice.webp" alt="homemaranha" class="slide filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                            <img src="assets/img/barraCA5.png" alt="barra" class="barra-continuar">
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/avatar.webp" alt="avatar" class="slide filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                            <img src="assets/img/barraCA3.png" alt="barra" class="barra-continuar">
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/bettercallsaul.jpg" alt="bcs" class="slide filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                            <img src="assets/img/barraCA4.png" alt="barra" class="barra-continuar">
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/jojo.jpg" alt="jojo" class="slide filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                            <img src="assets/img/barraCA2.png" alt="barra" class="barra-continuar">
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/homemaranha.webp" alt="homemaranha" class="slide filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                            <img src="assets/img/barraCA1.png" alt="barra" class="barra-continuar">
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/arcane.jpg" alt="arcane" class="slide filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                            <img src="assets/img/barraCA3.png" alt="barra" class="barra-continuar">
+                        </div>
                     </div>
-
-                    <div class="div-continuar">
-                        <img src="assets/img/deptodeconsp.jpg" alt="depto" class="slide filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                        <img src="assets/img/barraCA2.png" alt="barra" class="barra-continuar">
-                    </div>
-
-                    <div class="div-continuar">
-                        <img src="assets/img/theoffice.webp" alt="homemaranha" class="slide filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                        <img src="assets/img/barraCA5.png" alt="barra" class="barra-continuar">
-                    </div>
-
-
-                    <div class="div-continuar">
-                        <img src="assets/img/avatar.webp" alt="avatar" class="slide filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                        <img src="assets/img/barraCA3.png" alt="barra" class="barra-continuar">
-                    </div>
-
-                    <div class="div-continuar">
-                        <img src="assets/img/bettercallsaul.jpg" alt="bcs" class="slide filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                        <img src="assets/img/barraCA4.png" alt="barra" class="barra-continuar">
-                    </div>
-
-                    <div class="div-continuar">
-                        <img src="assets/img/jojo.jpg" alt="jojo" class="slide filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                        <img src="assets/img/barraCA2.png" alt="barra" class="barra-continuar">
-                    </div class="div-continuar">
-
-                    <div class="div-continuar">
-                        <img src="assets/img/homemaranha.webp" alt="homemaranha" class="slide filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                        <img src="assets/img/barraCA1.png" alt="barra" class="barra-continuar">
-                    </div>
-
-                    <div class="div-continuar">
-                        <img src="assets/img/arcane.jpg" alt="arcane" class="slide filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                        <img src="assets/img/barraCA3.png" alt="barra" class="barra-continuar">
-                    </div>
-
+                    <button class="seta direita">&#10094;</button>
                 </div>
             </section>
 
             <section class="conteudo" id="recomendado">
                 <h1>Recomendados</h1>
-                <div class="carrossel">
+                <div class="carrossel-wrapper">
+                    <button class="seta esquerda">&#10094;</button>
+                    <div class="carrossel">
+                        <div class="div-continuar">
+                            <img src="assets/img/batman.webp" alt="batman" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
 
-                    <div class="div-continuar">
-                        <img src="assets/img/batman.webp" alt="batman" class="filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
+                        <div class="div-continuar">
+                            <img src="assets/img/bigmouth.jpg" alt="big mouth" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/blackmirror.jpg" alt="black mirror" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/showdetruman.webp" alt="show de truman" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/breakingbad.webp" alt="breaking bad" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/devilmaycry.jpg" alt="devil may cry" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/onepiece.webp" alt="one piece" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/ninjago.webp" alt="ninjago" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
                         </div>
                     </div>
-
-                    <div class="div-continuar">
-                        <img src="assets/img/bigmouth.jpg" alt="big mouth" class="filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                    </div>
-
-                    <div class="div-continuar">
-                        <img src="assets/img/blackmirror.jpg" alt="black mirror" class="filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                    </div>
-
-                    <div class="div-continuar">
-                        <img src="assets/img/showdetruman.webp" alt="show de truman" class="filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                    </div>
-
-                    <div class="div-continuar">
-                        <img src="assets/img/breakingbad.webp" alt="breaking bad" class="filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                    </div>
-
-                    <div class="div-continuar">
-                        <img src="assets/img/devilmaycry.jpg" alt="devil may cry" class="filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                    </div>
-
-                    <div class="div-continuar">
-                        <img src="assets/img/onepiece.webp" alt="one piece" class="filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                    </div>
-
-                    <div class="div-continuar">
-                        <img src="assets/img/ninjago.webp" alt="ninjago" class="filme">
-                        <div class="botao-play">
-                            <img src="assets/img/Group 2.png" alt="play">
-                        </div>
-                    </div>
-
+                    <button class="seta direita">&#10094;</button>
                 </div>
             </section>
 
-             <section class="conteudo" id="series">
-                <h1>Séries</h1>
-                <div class="carrossel">
-                    
+            <section class="conteudo-top">
+                <h1 id="top10">Top 10:</h1>
+                <div class="carrossel-wrapper">
+                    <button class="seta esquerda">&#10094;</button>
+                    <div class="carrossel">
+                        <div class="div-top">
+                            <h1>1</h1>
+                            <img src="assets/img/bailavini.jpg" alt="top 1" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-top">
+                            <h1>2</h1>
+                            <img src="assets/img/balaperdida3.jpg" alt="top 2" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-top">
+                            <h1>3</h1>
+                            <img src="assets/img/dentro.webp" alt="top 3" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-top">
+                            <h1>4</h1>
+                            <img src="assets/img/monstroadolescente.webp" alt="top 4" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-top">
+                            <h1>5</h1>
+                            <img src="assets/img/planoperfeito2.webp" alt="top 5" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-top">
+                            <h1>6</h1>
+                            <img src="assets/img/galinha.png" alt="top 6" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-top">
+                            <h1>7</h1>
+                            <img src="assets/img/coisasestranhas.png" alt="top 7" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-top">
+                            <h1>8</h1>
+                            <img src="assets/img/moçaquematouomarido.png" alt="top 8" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-top">
+                            <h1>9</h1>
+                            <img src="assets/img/omagomagico.png" alt="top 9" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-top">
+                            <h1>10</h1>
+                            <img src="assets/img/teste.png" alt="top 10" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="seta direita">&#10094;</button>
                 </div>
             </section>
 
-             <section class="conteudo" id="filmes">
+            <section class="conteudo" id="filmes">
                 <h1>Filmes</h1>
-                <div class="carrossel">
-                    
+                <div class="carrossel-wrapper">
+                    <button class="seta esquerda">&#10094;</button>
+                    <div class="carrossel">
+                        <div class="div-continuar">
+                            <img src="assets/img/saiudoarmario.png" alt="batman" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/ladygaga.png" alt="big mouth" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/tijolo.png" alt="black mirror" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/mcdaniel.png" alt="show de truman" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/minions.png" alt="breaking bad" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/filmededoido.png" alt="devil may cry" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/montedearanha.png" alt="one piece" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/ganso.png" alt="ninjago" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="seta direita">&#10094;</button>
                 </div>
             </section>
 
+            <section class="conteudo" id="series">
+                <h1>Séries</h1>
+                <div class="carrossel-wrapper">
+                    <button class="seta esquerda">&#10094;</button>
+                    <div class="carrossel">
+                        <div class="div-continuar">
+                            <img src="assets/img/alcanforcom13anos.png" alt="batman" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
 
+                        <div class="div-continuar">
+                            <img src="assets/img/batatinhafrita123.png" alt="big mouth" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/outosbancos.png" alt="black mirror" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/judo.png" alt="show de truman" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/chapeudepalha.png" alt="breaking bad" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/bots.png" alt="devil may cry" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/dexter.png" alt="one piece" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+
+                        <div class="div-continuar">
+                            <img src="assets/img/flash.png" alt="ninjago" class="filme">
+                            <div class="botao-play">
+                                <img src="assets/img/Group 2.png" alt="play">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="seta direita">&#10094;</button>
+                </div>
+            </section>
 
             <footer>
                 <div style="display: flex; justify-content: center; justify-items: center;">
                     <div class="brands">
-                        <a href="https://www.instagram.com/zxhdavi/" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://github.com/DaviAlcanfor" target="_blank"><i
-                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/zxhdavi/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/DaviAlcanfor" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="mailto:alcanfordavi@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i></a>
                     </div>
                     <p>&copy; 2025 Davi Alcanfôr</p>
-
                 </div>
             </footer>
-    </main>
-</body>
+        </main>
+    </div>
 
     <script>
+        document.querySelectorAll('.carrossel-wrapper').forEach(wrapper => {
+            const carrossel = wrapper.querySelector('.carrossel');
+            const leftBtn = wrapper.querySelector('.seta.esquerda');
+            const rightBtn = wrapper.querySelector('.seta.direita');
+
+            if (!carrossel || !leftBtn || !rightBtn) return;
+
+            const step = Math.floor(carrossel.clientWidth * 0.8);
+
+            rightBtn.addEventListener('click', () => {
+                carrossel.scrollBy({ left: step, behavior: 'smooth' });
+            });
+
+            leftBtn.addEventListener('click', () => {
+                carrossel.scrollBy({ left: -step, behavior: 'smooth' });
+            });
+
+            function updateButtons() {
+                const atStart = carrossel.scrollLeft <= 5;
+                const atEnd = (carrossel.scrollWidth - carrossel.clientWidth - carrossel.scrollLeft) <= 5;
+                leftBtn.disabled = atStart;
+                rightBtn.disabled = atEnd;
+            }
+
+            carrossel.addEventListener('scroll', updateButtons);
+            window.addEventListener('resize', updateButtons);
+            updateButtons();
+        });
 
         document.addEventListener("DOMContentLoaded", () => {
-        const img = localStorage.getItem("perfilSelecionado");
+            const img = localStorage.getItem("perfilSelecionado");
             if (img) {
                 document.getElementById("perfil-usuario").src = img;
             }
         });
-
     </script>
 
+</body>
 </html>
