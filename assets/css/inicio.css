@@ -8,7 +8,8 @@
 html{
     scroll-behavior: smooth;
 }
-body{   
+body{  
+    overflow-x: hidden; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -59,7 +60,7 @@ div.sombra{
     background-color: black;
     z-index: 0;
     width: 100%;
-    height: 730px;
+    height: 100%;
     max-height: 100%;
     min-width: 100%;
     background: linear-gradient(to bottom, rgba(0,0,0,0), rgb(20, 20, 20));
@@ -106,7 +107,7 @@ div.sombra{
 
 .video video{
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     max-height: 100%;
     min-width: 100%;
     width: 100%;
@@ -179,6 +180,12 @@ div.sombra{
     z-index: 1;
 }
 
+.div-continuar{
+    position: relative;
+    display: inline-block;
+}
+
+
 .carrossel{
     padding: 5px;
     margin: 10px;
@@ -198,10 +205,44 @@ div.sombra{
     max-height: 5px;
     z-index: 1;
 }
-
+.botao-play{
+    position: absolute;
+    left: 40%;
+    right: 42%;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.5s ease;
+    z-index: 99;
+    margin-top: -30%;
+}
+.botao-play img {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
 .div-continuar:hover .barra-continuar{
     transition: 0.13s ease-in;
     opacity: 57%;
+}
+.div-continuar::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.div-continuar::after:hover{
+    background-color: rgba(0, 0, 0, 5);
+
+}
+.div-continuar:hover .botao-play img{
+    opacity: 1;
 }
 
 .conteudo .div-continuar:hover .filme {
@@ -218,6 +259,7 @@ div.sombra{
     transform: scale(1.03);
     transition: 0.3s;
     box-shadow: 0px 0px 10px rgb(155, 39, 39);
+    opacity: 0.8;
 }
 
 .brands{
@@ -234,4 +276,83 @@ div.sombra{
 
 i{
     color: white;
+}
+/* Seção Top 10 */
+.conteudo-top {
+    padding: 1px;
+    justify-content: center;
+    height: 200px; 
+    position: relative;
+    overflow: visible;
+    z-index: 2;
+    margin-bottom: 50px; 
+}
+
+.conteudo-top h1 {
+    margin-left: 15px;
+    cursor: default;
+    font-size: 1.5em; 
+}
+
+.div-top {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.div-top h1 {
+    font-size: 120px; 
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    line-height: 1;
+    z-index: 1;
+    margin-right: -25px; 
+    margin-bottom: 5px;
+}
+
+.div-top img {
+    height: 150px;
+    width: 100px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.div-top .botao-play {
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    margin-top: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.div-top .botao-play img {
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+}
+
+.div-top:hover .botao-play img {
+    opacity: 1;
+}
+
+.div-top:hover img.filme {
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgb(155, 39, 39);
+}
+
+/* TEM QUE VER PARA COLOCAR ESSA DIV ATRAS DE TUDO, PARA AMENIZAR A DIVISÃO DO VIDEO E DO FUNDO,VE AI ALCANFOR.*/
+
+.div-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
 }
