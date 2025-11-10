@@ -32,7 +32,7 @@ main p{
 
 .divs:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 15px 40px rgba(255, 0, 0, 0.25);
 }
 
 .divs h2 {
@@ -77,3 +77,11 @@ main a {
   opacity: 0.8;
 }
 
+.image{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px auto;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
