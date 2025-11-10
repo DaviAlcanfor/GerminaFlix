@@ -34,7 +34,7 @@
             <div>
                 <i class="fas fa-bell" style="font-size: 20px; margin-top: 10px;"></i>
             </div>
-            <a href="index.html"><img class="icon" id="perfil-usuario" src="assets/img/perfil-amarelo.jpg" alt="perfil"></a>
+            <a href="index.html"><img class="icon" id="perfil-usuario" src="assets/img/perfil-azul.jpg" alt="perfil"></a>
         </div>
     </header>
 
@@ -86,7 +86,6 @@
             <section class="conteudo" id="continuar">
                 <h1>Continuar assistindo</h1>
                 <div class="carrossel-wrapper">
-                    <button class="seta esquerda">&#10094;</button>
                     <div class="carrossel">
                         <div class="div-continuar">
                             <img src="assets/img/rickandmorty.webp" alt="ricknmorty" class="slide filme">
@@ -152,14 +151,12 @@
                             <img src="assets/img/barraCA3.png" alt="barra" class="barra-continuar">
                         </div>
                     </div>
-                    <button class="seta direita">&#10094;</button>
                 </div>
             </section>
 
             <section class="conteudo" id="recomendado">
                 <h1>Recomendados</h1>
                 <div class="carrossel-wrapper">
-                    <button class="seta esquerda">&#10094;</button>
                     <div class="carrossel">
                         <div class="div-continuar">
                             <img src="assets/img/batman.webp" alt="batman" class="filme">
@@ -217,14 +214,12 @@
                             </div>
                         </div>
                     </div>
-                    <button class="seta direita">&#10094;</button>
                 </div>
             </section>
 
             <section class="conteudo-top">
                 <h1 id="top10">Top 10:</h1>
                 <div class="carrossel-wrapper">
-                    <button class="seta esquerda">&#10094;</button>
                     <div class="carrossel">
                         <div class="div-top">
                             <h1>1</h1>
@@ -284,7 +279,7 @@
 
                         <div class="div-top">
                             <h1>8</h1>
-                            <img src="assets/img/moçaquematouomarido.png" alt="top 8" class="filme">
+                            <img src="assets/img/elizematsunaga.png" alt="top 8" class="filme">
                             <div class="botao-play">
                                 <img src="assets/img/Group 2.png" alt="play">
                             </div>
@@ -306,14 +301,12 @@
                             </div>
                         </div>
                     </div>
-                    <button class="seta direita">&#10094;</button>
                 </div>
             </section>
 
             <section class="conteudo" id="filmes">
                 <h1>Filmes</h1>
                 <div class="carrossel-wrapper">
-                    <button class="seta esquerda">&#10094;</button>
                     <div class="carrossel">
                         <div class="div-continuar">
                             <img src="assets/img/saiudoarmario.png" alt="batman" class="filme">
@@ -371,17 +364,15 @@
                             </div>
                         </div>
                     </div>
-                    <button class="seta direita">&#10094;</button>
                 </div>
             </section>
 
             <section class="conteudo" id="series">
                 <h1>Séries</h1>
                 <div class="carrossel-wrapper">
-                    <button class="seta esquerda">&#10094;</button>
                     <div class="carrossel">
                         <div class="div-continuar">
-                            <img src="assets/img/alcanforcom13anos.png" alt="batman" class="filme">
+                            <img src="assets/img/adolescencia.png" alt="batman" class="filme">
                             <div class="botao-play">
                                 <img src="assets/img/Group 2.png" alt="play">
                             </div>
@@ -436,7 +427,6 @@
                             </div>
                         </div>
                     </div>
-                    <button class="seta direita">&#10094;</button>
                 </div>
             </section>
 
@@ -447,49 +437,20 @@
                         <a href="https://github.com/DaviAlcanfor" target="_blank"><i class="fa-brands fa-github"></i></a>
                         <a href="mailto:alcanfordavi@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i></a>
                     </div>
-                    <p>&copy; 2025 Davi Alcanfôr</p>
+                    <p>&copy; 2025 Davi Alcanfôr & Murilo Rosa</p>
                 </div>
             </footer>
         </main>
     </div>
-
-    <script>
-        document.querySelectorAll('.carrossel-wrapper').forEach(wrapper => {
-            const carrossel = wrapper.querySelector('.carrossel');
-            const leftBtn = wrapper.querySelector('.seta.esquerda');
-            const rightBtn = wrapper.querySelector('.seta.direita');
-
-            if (!carrossel || !leftBtn || !rightBtn) return;
-
-            const step = Math.floor(carrossel.clientWidth * 0.8);
-
-            rightBtn.addEventListener('click', () => {
-                carrossel.scrollBy({ left: step, behavior: 'smooth' });
-            });
-
-            leftBtn.addEventListener('click', () => {
-                carrossel.scrollBy({ left: -step, behavior: 'smooth' });
-            });
-
-            function updateButtons() {
-                const atStart = carrossel.scrollLeft <= 5;
-                const atEnd = (carrossel.scrollWidth - carrossel.clientWidth - carrossel.scrollLeft) <= 5;
-                leftBtn.disabled = atStart;
-                rightBtn.disabled = atEnd;
-            }
-
-            carrossel.addEventListener('scroll', updateButtons);
-            window.addEventListener('resize', updateButtons);
-            updateButtons();
-        });
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const img = localStorage.getItem("perfilSelecionado");
-            if (img) {
-                document.getElementById("perfil-usuario").src = img;
-            }
-        });
-    </script>
-
 </body>
+<script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const img = localStorage.getItem("perfilSelecionado");
+        if (img) {
+            document.getElementById("perfil-usuario").src = img;
+        }
+    });
+
+</script>
 </html>
