@@ -1,17 +1,17 @@
 html{
     scroll-behavior: smooth;
 }
-body{  
-    overflow-x: hidden; 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    align-items: center;
-    background-color: rgb(20, 20, 20);
-    color: white;
-    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
-    font-size: small;
-}
+    body{  
+        overflow-x: hidden; 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        align-items: center;
+        background-color: rgb(20, 20, 20);
+        color: white;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        font-size: small;
+    }
 
 header{
     background-color: rgb(14, 14, 14);
